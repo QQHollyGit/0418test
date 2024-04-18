@@ -65,3 +65,4 @@ helper-status-checker:
       # -- Set the values of the ServiceAccount that will execute the status checker Job.
       serviceAccount:
         name: "status-checker"
+        create: true
