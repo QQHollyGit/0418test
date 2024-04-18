@@ -22,7 +22,7 @@ checks:
 
     # -- Namespace where the status-checker Job shall be scheduled.
     namespace:
-      name: openshift-logging
+      name: redhatcamelk
     # -- Syncwave for the status-check Job
     # @default -- 0
     syncwave: 3
