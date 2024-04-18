@@ -30,3 +30,4 @@ checks:
     serviceAccount:
       # -- Name of the Service Account.
       name: "status-checker"
+      create: true
