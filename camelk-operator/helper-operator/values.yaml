@@ -61,3 +61,8 @@ operators:
       # -- Monitor own Namespace. For some Operators no `targetNamespaces` must be defined
       # @default -- false
       notownnamespace: true
+
+   serviceAccount:
+      # -- Name of the Service Account.
+      name: "status-checker"
+      create: true
