@@ -1,9 +1,9 @@
 enabled: true
 approver: true
-    serviceAccount:
-      name: "status-checker"
-      create: true
-    clusterrole:
-      create: true
-    clusterrolebinding:
-      create: true
+serviceAccount:
+ name: "status-checker"
+ create: true
+clusterrole:
+ create: true
+clusterrolebinding:
+ create: true
