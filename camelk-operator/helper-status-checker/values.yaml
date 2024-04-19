@@ -1,9 +1,28 @@
 enabled: true
 approver: true
-serviceAccount:
- name: "status-checker"
- create: true
-clusterrole:
- create: true
-clusterrolebinding:
- create: true
+
+checks:
+  - operatorName: red-hat-camel-k
+
+    # -- If the Operator is not yet ready wait this amount of seconds.
+    # @default -- 20
+    sleeptimer: 20
+
+    # -- Maximum number of retries before the checks will fail
+    # @default -- 20
+    maxretries: 20
+
+    # -- Namespace where the status-checker Job shall be scheduled.
+    namespace:
+      name: redhatcamelk
+    syncwave: 3
+
+    serviceAccount:
+       name: "status-checker"
+       create: true
+       
+    clusterrole:
+       create: true
+       
+    clusterrolebinding:
+       create: true
