@@ -22,7 +22,7 @@ checks:
        create: true
        
     clusterrole:
-       create: true
+       enabled: true
        
     clusterrolebinding:
-       create: true
+       enabled: true
